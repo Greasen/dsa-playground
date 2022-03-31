@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/svg" href="./logo.svg" />
+  <title>dsa UI Playground</title>
+  <script>
+    // process shim for old versions of @vue/compiler-sfc dependency
+    window.process = { env: {} }
+    const saved = localStorage.getItem('vue-sfc-playground-prefer-dark')
+    if (saved !== 'false') {
+      document.documentElement.classList.add('dark')
+    }
+  </script>
+  
+  <script type="module" crossorigin src="./assets/index.5e87cf23.js"></script>
+  <link rel="modulepreload" href="./assets/vendor.88e9cdda.js">
+  <link rel="stylesheet" href="./assets/index.a24d9292.css">
+</head>
+
+<body>
+  <div id="app"></div>
+</body>
+
+</html>
